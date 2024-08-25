@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake, Water, Gun</title>
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+            color: #333;
+        }
+
+        .result-container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .result-container h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        .result-container p {
+            font-size: 1.5em;
+            margin: 10px 0;
+            color: #555;
+        }
+
+        .result-container .winner {
+            font-weight: bold;
+            color: #d63447;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h1>Snake, Water, Gun Game</h1>
+        <p id="cpu-choice"></p>
+        <p id="user-choice"></p>
+        <p>The winner is: <span id="result" class="winner"></span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
